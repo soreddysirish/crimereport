@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User register form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="date.css">
+	<link rel="stylesheet" type="text/css" href="regist.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="http://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"></script>
+	<script type="text/javascript" src="date.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h2>User registration form</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="systemRef">First name
+						<input type="text"  class="form-control" name="casetype"/>
+					</label>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="systemRef">Last name
+						<input type="text"  class="form-control" name="casetype"/>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="registeremp_gender">Gender</label>
+					<input type="radio" value="male" name="gender" id="registeremp_gender_male">
+					<label for="registeremp_gender_male">Male</label>
+					<input type="radio" value="female" name="gender" id="registeremp_gender_female">
+					<label for="registeremp_gender_female">Female</label>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="systemRef">Licence no (or) Election card numnber
+						<input type="text"  class="form-control" name="casetype"/>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="systemRef">Mobile number
+						<input type="text"  class="form-control" name="mobilenumber"/>
+					</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="name">
+						Address </label>
+						<textarea name="message" id="message" class="form-control" rows="9" cols="25" placeholder="Address"></textarea><span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="sel1">Designation:</label>
+					<select class="form-control" id="sel1">
+						<option>SI</option>
+						<option>CI</option>
+						<option>Head conistable</option>
+						<option>Conostable</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="comment">Aadhar number:</label>
+					<input type="text"  class="form-control" name="mobilenumber"/>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="email" class="sr-only">Email</label>
+					<input type="email" name="email" id="email" class="form-control" placeholder="test@example.com">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="key" class="sr-only">Password</label>
+					<input type="password" name="key" id="key" class="form-control" placeholder="Password" >
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="key" class="sr-only">Password confirmation</label>
+					<input type="password" name="key" id="key" class="form-control" placeholder="ConfirmPassword" >
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="key" class="sr-only">Alternate phone number</label>
+					<input type="text" name="key" id="key" class="form-control" placeholder="phone number" >
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-4 col-md-push-4">
+		<div class="form-group">
+			<input type="button"  class="btn btn-custom btn-sm" value="Save">
+			<input type="button"  class="btn btn-default btn-sm" value="Clear">
+		</div>
+	</div>
+</body>
+</html>

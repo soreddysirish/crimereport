@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="date.css">
+	<link rel="stylesheet" type="text/css" href="regist.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="http://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"></script>
+	<script type="text/javascript" src="date.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="#">Logo</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home Page</a></li>
+					<li><a href="caseregister.html">Case register</a></li>
+					<li><a href="userregister.html">User Registration</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid text-center">    
+		<div class="row content">
+			<div class="col-sm-2 sidenav">
+				<p><a href="#">Inquiry</a></p>
+				<p><a href="#">Give Feedback</a></p>
+				<p><a href="#">Ask question</a></p>
+			</div>
+			<div class="col-sm-8"> 
+				<h2>Case Register form</h2>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<label for="systemRef">case number
+								<input type="text"  class="form-control" name="casetype"/>
+							</label>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<div class="input-append date datetimepicker" id="datetimepicker" data-date="" data-date-format="dd-mm-yyyy">
+								<label>case register date: 
+									<input class="form-control" type="text" value="">
+									<span class="add-on"><i class="icon-th"></i></span>
+								</label>
+							</div>  
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<label for="sel1">Case status:</label>
+							<select class="form-control" id="sel1">
+								<option>under process</option>
+								<option>court decision pending</option>
+								<option>completed</option>
+								<option>Closed</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<label for="comment">Witness description:</label>
+							<textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="form-group">
+							<label for="sel1">Case type:</label>
+							<select class="form-control" id="sel1">
+								<option>Murder</option>
+								<option>Roborry</option>
+								<option>Missing</option>
+								<option>other</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<label for="comment">Case description:</label>
+							<textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="row"  style="margin-top: 2%;">
+					<div class="col-md-8 col-md-push-3">
+						<div class="col-md-2">
+							<div class="form-group">
+								<input type="button"  name="save" class="form-control btn btn-success" value="Save" />
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="form-group">
+								<input type="button" name="Clear" class="form-control btn btn-primary" value="Clear">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2 sidenav">
+				<div class="well">
+					<p>write some descripttion of project</p>
+				</div>
+				<div class="well">
+					<p>write some descripttion of police</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="container-fluid text-center  footer navbar-fixed-bottom">
+		<p>Footer Text</p>
+	</footer>
+</body>
+</html>
+<script type="text/javascript">
+	$('#datetimepicker').datetimepicker({ format: "dd/mm/yyyy",
+		autoclose: true,minView: 2});
+	$('.datetimepicker1').datetimepicker({ format: "dd/mm/yyyy",
+		autoclose: true});
+	</script>
